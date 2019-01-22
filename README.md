@@ -1,2 +1,2 @@
-# TestRepo
-Unit 1 data science profile 
+# stat6306introdatascience
+Files and projects for Stat 6306 Introduction to Data Science

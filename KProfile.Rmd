@@ -1,0 +1,36 @@
+---
+title: "K's DS Profile"
+author: "K Theobald"
+date: "1/21/2019"
+output:
+  html_document:
+    keep_md: true
+---
+
+## R Markdown
+
+This R Markdown documents the entry level of Profile for K in Data Science. 
+
+#Variables and Scale
+  *Scale is 1:5 with 5 being the Best
+  *Programming (aka. Computer Programming)
+  *Math
+  *Stats (aka. Statistics)
+  *Machine Learning
+  *Domain Expertise
+  *Comm. Pres. Skills (aka. Communication Presentation Skills)
+  *Data Visual (aka. Data Visualization)
+
+#Session
+```{r}
+sessionInfo()
+```
+
+#Code and Barplot for K's profile
+```{r, echo= TRUE, fig.width = 9}
+category <- c("Programming", "Math", "Stats", "Machine Learning", "Domain Expertise", "Comm. Pres. Skills", "Data Visual")
+Ranking <- c(2, 3, 2, 2, 2,3,2)
+k = data.frame(category, Ranking)
+barplot(k$Ranking, cex.names=.5, names.arg=(k$category), ylab="Ranking", xlab="Category", main="K's Ranking")
+````
+
